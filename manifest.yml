@@ -1,0 +1,10 @@
+---
+applications:
+- name: 249071-item-service
+  path: target\shoppig-item-service-1.0.0.jar
+  memory: 1G
+  instances : 3
+  routes:
+    - route: 249071-item-service.cfapps.io
+  services:
+    - 249071_Eureka  
